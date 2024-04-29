@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se connecter</title>
+    <link rel="stylesheet" href="app.css">
+    <script type="module" src="js/app.js"></script>
+
+</head>
+<body>
+    <h1>ENI - MEMORY - Se connecter</h1>
+    
+    <nav class="crumbs">
+        <a href="">Acceuil</a>
+        <a href="inscription.html">S'inscrire</a>
+        <a href="connect.html">Se connecter</a>
+        <a href="profil.html">Profil</a>
+        <a href="jouer.html">Jouer</a>
+    </nav>
+    <br>
+
+    <fieldset>
+        <legend>Connectez-vous.</legend>
+        <form id="connect" class="form">
+            <label for="mailCo">Entrez votre email</label>
+            <input type="mail" id="mailCo" name="mailCo" class="input" placeholder="Votre email : exemple john@doe.fr" required />
+            <div class="message erreur" id="erreur-nom"></div>
+        
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" class="input" placeholder="Votre mot de passe" required />
+            <div class="message erreur" id="erreur-mail"></div>
+        
+        
+        
+        
+            <button type="submit" id="button" class="btn">Se connecter</button>
+            <button type="reset" id="button" class="btn">Annuler</button>
+        
+        </form>
+    </fieldset>
+</body>
+</html>

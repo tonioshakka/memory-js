@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S'inscrire</title>
+    <link rel="stylesheet" href="app.css">
+    <script type="module" src="js/app.js"></script>
+
+</head>
+<body>
+    <h1>ENI - MEMORY - S'inscrire</h1>
+    
+    <nav class="crumbs">
+        <a href="index.html">Acceuil</a>
+        <a href="inscription.html">S'inscrire</a>
+        <a href="connect.html">Se connecter</a>
+        <a href="profil.html">Profil</a>
+        <a href="jouer.html">Jouer</a>
+    </nav>
+    <br>
+    <fieldset>
+        <form id="formulaire" class="form">
+            <label for="nom">Nom d'utilisateur</label>
+            <input type="text" id="nom" name="nom" class="input" placeholder="3 caractères minimum" required />
+            <div class="message erreur" id="erreur-nom"></div>
+        
+            <label for="mail">Entrez votre enail</label>
+            <input type="email" id="mail" name="mail" class="input" placeholder="Votre email" required />
+            <div class="message erreur" id="erreur-mail"></div>
+        
+            <label for="mDp">Mot de passe :</label>
+            <input type="password" id="mDp" name="motdepasse" class="input" placeholder="Votre mot de passe" required />
+            <div class="message erreur" id="erreur-motdepasse"></div>
+            <label for="confirmMDP">Mot de passe :</label>
+            <input type="password" id="confirmMDP" name="confirmMDP" class="input" placeholder="Confirmez le mot de passe" required />
+            <div class="message erreur" id="erreur-motdepasse"></div>
+        
+            <button type="submit" id="button" class="btn">Création du compte</button>
+            <button type="reset" id="button" class="btn">Annuler</button>
+        </form>
+    </fieldset>
+
+</body>
+</html>
