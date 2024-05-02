@@ -12,7 +12,7 @@
     <h1>ENI - MEMORY - Se connecter</h1>
     
     <nav class="crumbs">
-        <a href="">Acceuil</a>
+        <a href="index.html">Acceuil</a>
         <a href="inscription.html">S'inscrire</a>
         <a href="connect.html">Se connecter</a>
         <a href="profil.html">Profil</a>
@@ -21,22 +21,22 @@
     <br>
 
     <fieldset>
-        <legend>Connectez-vous.</legend>
+        <label>Connectez-vous :</label><br><br>
         <form id="connect" class="form">
-            <label for="mailCo">Entrez votre email</label>
-            <input type="mail" id="mailCo" name="mailCo" class="input" placeholder="Votre email : exemple john@doe.fr" required />
+            <label for="mailCo">Entrez votre email</label><br>
+            <input type="mail" id="mailCo" name="mailCo" class="input" placeholder="Votre email : exemple john@doe.fr" autofocus required />
             <div class="message erreur" id="erreur-nom"></div>
         
-            <label for="password">Mot de passe</label>
+            <label for="password">Mot de passe</label><br>
             <input type="password" id="password" name="password" class="input" placeholder="Votre mot de passe" required />
-            <div class="message erreur" id="erreur-mail"></div>
+            <div class="message erreur" id="erreur-mail"></div><br><br>
         
         
         
-        
-            <button type="submit" id="button" class="btn">Se connecter</button>
-            <button type="reset" id="button" class="btn">Annuler</button>
-        
+        <div class="validation" id="validation">
+            <button type="submit" id="buttonS" class="btn">Se connecter</button>
+            <button type="reset" id="buttonA" class="btn">Annuler</button>
+        <div>
         </form>
     </fieldset>
 </body>

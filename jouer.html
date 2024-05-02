@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jouer</title>
     <link rel="stylesheet" href="app.css">
-    <script type="module" src="js/app.js"></script>
+    
 
 </head>
 <body>
@@ -19,7 +19,9 @@
         <a href="jouer.html">Jouer</a>
     </nav>
     <br>
-    <table>
+    <section>
+
+    <table id="scores">
         <thead>Derniers Scores</thead>
         <tr>
             <th>Pseudo</th>
@@ -28,21 +30,78 @@
             <th>Choix Memory</th>
             <th>Date</th>
         </tr>
-        <tr></tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
         <tr></tr>
     </table>
     <p>Tentez de gagner avec le moins d'essais possile.</p><br>
-    <p>Appuyez sur la barre d'espace pour relancer le jeu.</p><br><br>
-    <div id="nbCoups">Nombre de coups :</div>
+    <p id="trick">Appuyez sur la barre d'espace pour relancer le jeu.</p><br><br>
+    <div id="nbCoups"></div>
+<section class="memory-game">
+    <div class="memory-card" data-framework="image1">
+        <img class="front-face" src="Projet_Web_Memory/Ressources_Projet/ressources/memory-legume/image1.svg" alt="" />
+        <img class="back-face" src="Projet_Web_Memory/Ressources_Projet/ressources/animaux/9.webp" alt="" />
+    </div>
+    <div class="memory-card" data-framework="image1">
+        <img class="front-face" src="Projet_Web_Memory/Ressources_Projet/ressources/memory-legume/image1.svg" alt="" />
+        <img class="back-face" src="Projet_Web_Memory/Ressources_Projet/ressources/animaux/9.webp" alt="" />
+    </div>
 
-    <section>
+    <div class="memory-card" data-framework="image2">
+        <img class="front-face" src="Projet_Web_Memory/Ressources_Projet/ressources/memory-legume/image2.svg" alt="" />
+        <img class="back-face" src="Projet_Web_Memory/Ressources_Projet/ressources/animaux/9.webp" alt="" />
+    </div>
+    <div class="memory-card" data-framework="image2">
+        <img class="front-face" src="Projet_Web_Memory/Ressources_Projet/ressources/memory-legume/image2.svg" alt="" />
+        <img class="back-face" src="Projet_Web_Memory/Ressources_Projet/ressources/animaux/9.webp" alt="" />
+    </div>
+
+    <div class="memory-card" data-framework="image3">
+        <img class="front-face" src="Projet_Web_Memory/Ressources_Projet/ressources/memory-legume/image3.svg" alt="" />
+        <img class="back-face" src="Projet_Web_Memory/Ressources_Projet/ressources/animaux/9.webp" alt="" />
+    </div>
+    <div class="memory-card" data-framework="image3">
+        <img class="front-face" src="Projet_Web_Memory/Ressources_Projet/ressources/memory-legume/image3.svg" alt="" />
+        <img class="back-face" src="Projet_Web_Memory/Ressources_Projet/ressources/animaux/9.webp" alt="" />
+    </div>
+
+    <div class="memory-card" data-framework="image4">
+        <img class="front-face" src="Projet_Web_Memory/Ressources_Projet/ressources/memory-legume/image4.svg" alt="" />
+        <img class="back-face" src="Projet_Web_Memory/Ressources_Projet/ressources/animaux/9.webp" alt="" />
+    </div>
+    <div class="memory-card" data-framework="image4">
+        <img class="front-face" src="Projet_Web_Memory/Ressources_Projet/ressources/memory-legume/image4.svg" alt="" />
+        <img class="back-face" src="Projet_Web_Memory/Ressources_Projet/ressources/animaux/9.webp" alt="" />
+    </div>
+
+    <div class="memory-card" data-framework="image5">
+        <img class="front-face" src="Projet_Web_Memory/Ressources_Projet/ressources/memory-legume/image5.svg" alt="" />
+        <img class="back-face" src="Projet_Web_Memory/Ressources_Projet/ressources/animaux/9.webp" alt="" />
+    </div>
+    <div class="memory-card" data-framework="image5">
+        <img class="front-face" src="Projet_Web_Memory/Ressources_Projet/ressources/memory-legume/image5.svg" alt="" />
+        <img class="back-face" src="Projet_Web_Memory/Ressources_Projet/ressources/animaux/9.webp" alt="" />
+    </div>
+
+    <div class="memory-card" data-framework="image6">
+        <img class="front-face" src="Projet_Web_Memory/Ressources_Projet/ressources/memory-legume/image6.svg" alt="" />
+        <img class="back-face" src="Projet_Web_Memory/Ressources_Projet/ressources/animaux/9.webp" alt="" />
+    </div>
+    <div class="memory-card" data-framework="image6">
+        <img class="front-face" src="Projet_Web_Memory/Ressources_Projet/ressources/memory-legume/image6.svg" alt="" />
+        <img class="back-face" src="Projet_Web_Memory/Ressources_Projet/ressources/animaux/9.webp" alt="" />
+    </div>
+</section>
 
 
-    </section>
 
 
-
-
-
+<script type="module" src="js/app.js"></script>
 </body>
+
 </html>

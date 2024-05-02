@@ -20,11 +20,11 @@
     </nav>
 
     <fieldset>
-        <legend>Profil</legend>
+        <label>Profil</label><br><br>
         <span>Nom d'utilisateur</span><br>
-        <span id="userName">userName</spanid></span><br>
+        <span id="userName">userName</spanid></span><br><br>
         <span>Email</span><br>
-        <span id="userMail">userMail</span><br>
+        <span id="userMail">userMail</span><br><br>
         <span>Choix du Memory</span><br>
         <select name="choixMemory" id="choixMemory">
             <option value="Animaux animés">Animaux animés</option>
@@ -34,7 +34,7 @@
             <option value="Dinausores">Dinausores</option>
             <option value="Légumes">Légumes</option>
             <option value="Scrabble">Scrabble</option>
-        </select><br>
+        </select><br><br>
         <span>Taille du Memory</span>
         <select name="choixMemory" id="choixMemory">
             <option value="4*3">4*3</option>
@@ -44,9 +44,9 @@
             <option value="8*5">8*5</option>
             </select><br>
         <br>
-            <button type="submit" id="button" class="btn">Enregistrez Option</button>
+            <button type="submit" id="buttonS" class="btn">Enregistrez Option</button>
             <br>
-            <table>
+            <table id="scores">
                 <thead>Derniers Scores</thead>
                     <tr>
                         <th>Pseudo</th>
@@ -55,7 +55,13 @@
                         <th>Choix Memory</th>
                         <th>Date</th>
                     </tr>
-                    <tr></tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
                     <tr></tr>
             </table>
 

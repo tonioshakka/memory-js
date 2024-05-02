@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S'inscrire</title>
     <link rel="stylesheet" href="app.css">
-    <script type="module" src="js/app.js"></script>
+    
 
 </head>
 <body>
@@ -20,26 +20,28 @@
     </nav>
     <br>
     <fieldset>
-        <form id="formulaire" class="form">
-            <label for="nom">Nom d'utilisateur</label>
-            <input type="text" id="nom" name="nom" class="input" placeholder="3 caractères minimum" required />
+        <form id="formulaire" class="form"> 
+            <label for="nom">Nom d'utilisateur</label><br>
+            <input type="text" id="nom" name="nom" class="input" placeholder="3 caractères minimum" pattern="^[a-zA-ZÀ-ÿ\s]{3,}$" autofocus required />
             <div class="message erreur" id="erreur-nom"></div>
         
-            <label for="mail">Entrez votre enail</label>
-            <input type="email" id="mail" name="mail" class="input" placeholder="Votre email" required />
+            <label for="mail">Entrez votre enail</label><br>
+            <input type="email" id="mail" name="mail" class="input" placeholder="Votre email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-z]{2,4}$" required />
             <div class="message erreur" id="erreur-mail"></div>
         
-            <label for="mDp">Mot de passe :</label>
-            <input type="password" id="mDp" name="motdepasse" class="input" placeholder="Votre mot de passe" required />
+            <label for="mDp">Mot de passe :</label><br>
+            <input type="password" id="mDp" name="motdepasse" class="input" placeholder="Votre mot de passe" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&!*])[A-Za-z\d@#$%^&!*]{8,}$" required />
             <div class="message erreur" id="erreur-motdepasse"></div>
-            <label for="confirmMDP">Mot de passe :</label>
+            <label for="confirmMDP">Mot de passe :</label><br>
             <input type="password" id="confirmMDP" name="confirmMDP" class="input" placeholder="Confirmez le mot de passe" required />
-            <div class="message erreur" id="erreur-motdepasse"></div>
+            <div class="message erreur" id="erreur-motdepasse"></div><br><br>
         
-            <button type="submit" id="button" class="btn">Création du compte</button>
-            <button type="reset" id="button" class="btn">Annuler</button>
+            <div class="validation" id="validation">
+                <button type="submit" id="buttonS" class="btn">Création du compte</button>
+                <button type="reset" id="buttonA" class="btn">Annuler</button>
+            </div>
         </form>
     </fieldset>
-
+<script type="module" src="js/app.js"></script>
 </body>
 </html>

@@ -5,11 +5,104 @@ body {
     align-items: center;
 }
 nav{
-    
-    justify-content: flex-start;
+    background-color: aquamarine;
+  padding: 2%;
+   font-size: 200%;
+   font-weight: bold;
+   border-radius: 1em;     
+}
+h1 {
+    text-decoration: underline;
+}
+section {       
+    background-color: rgb(101, 235, 245);
+    border-radius: 1lvh;
+    padding: 5%; 
+    font-size: 200%;
+    font-weight: bold;   
+}
+input:invalid {
+    border: 2px dashed red;
 }
 
-section {
+input:valid {
+    border: 1px solid black;
+}
+fieldset{
+    background-color: aqua;
+    font-size: 300%;
+    font-weight: bold;
+    }
+input{
+    background-color: cadetblue;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: column;
+}
+#validation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 1vw;
+}
+#scores{
+    
+    border-collapse: collapse;
+    border: 3px solid black;
+       
+}
+th{  
+    border: 3px solid black;  
+}
+#trick{
+    background-color: rgb(19, 240, 49);
+}
+.memory-game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .3s;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+.memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg) ;
+}
+
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    background: blue;
+    backface-visibility: hidden;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+.back-face{
+    background: blue;
+    z-index: 3;
 }
