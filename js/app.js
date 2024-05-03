@@ -22,9 +22,12 @@ function flipCard() {
 
   // second click
   secondCard = this;
- 
-  checkForMatch();
   
+  
+  checkForMatch();
+  if (pairs === cards.length / 2) {
+        alert("Victoire")
+    }
 }
 
 
@@ -33,18 +36,21 @@ function checkForMatch() {
     nbCoups++;
     divnbCoups.textContent='Nombre de coups : ' +nbCoups;
   isMatch ? disableCards() : unflipCards();
+  if (isMatch === true){
+    pairs++;
+  }
   console.log(nbCoups);
 }
 
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
-    pairs++;
+    
 
-    if (pairs === cards.length / 2) {
-        alert("Victoire")
-    }
+    
   resetBoard();
+  
+  
 }
 
 function unflipCards() {
@@ -53,8 +59,9 @@ function unflipCards() {
   setTimeout(() => {
     firstCard.classList.remove('flip');
     secondCard.classList.remove('flip');
-
+    
     resetBoard();
+    
   }, 1500);
 }
 document.addEventListener("keydown", (event) => {
@@ -71,6 +78,7 @@ function resetGame() {
   resetBoard();
   shuffle();
 }
+
 function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
